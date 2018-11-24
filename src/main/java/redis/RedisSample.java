@@ -1,4 +1,4 @@
-package myTest;
+package redis;
 
 import redis.clients.jedis.Jedis;
 /**
