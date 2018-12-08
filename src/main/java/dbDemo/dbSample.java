@@ -73,6 +73,4 @@ public class dbSample {
         }
         System.out.println("Goodbye!");
     }
-
-
 }
