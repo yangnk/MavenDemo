@@ -3,39 +3,52 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-    <!--Servlet测试 START-->
     <servlet>
-        <servlet-name>helloWorld</servlet-name>
-        <servlet-class>javaEEComponents.servletSample</servlet-class>
+        <servlet-name>servletSample</servlet-name>
+        <servlet-class>javaEEComponents.servletDemo.ServletSample</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>helloWorld</servlet-name>
-        <url-pattern>/helloWorld</url-pattern>
+        <servlet-name>servletSample</servlet-name>
+        <url-pattern>/test</url-pattern>
     </servlet-mapping>
-    <!--Servlet测试 END-->
 
-    <filter>
-        <filter-name>logPrinterFilter</filter-name>
-        <description>这是一个在打印log的filter</description>
-        <filter-class>javaEEComponents.logPrinterFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>logPrinterFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+    <!--<listener>-->
+        <!--<listener-class>javaEEComponents.listenerDemo.ListenerSample</listener-class>-->
+    <!--</listener>-->
 
-    <filter>
-        <description>字符集过滤器</description>
-        <filter-name>encodingFilter</filter-name>
-        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-        <init-param>
-            <description>字符集编码</description>
-            <param-name>encoding</param-name>
-            <param-value>UTF-8</param-value>
-        </init-param>
-    </filter>
-    <filter-mapping>
-        <filter-name>encodingFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+    <!--&lt;!&ndash;Servlet测试 START&ndash;&gt;-->
+    <!--<servlet>-->
+        <!--<servlet-name>helloWorld</servlet-name>-->
+        <!--<servlet-class>javaEEComponents.interceptorDemo.servletSample</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>helloWorld</servlet-name>-->
+        <!--<url-pattern>/helloWorld</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--&lt;!&ndash;Servlet测试 END&ndash;&gt;-->
+
+    <!--<filter>-->
+        <!--<filter-name>logPrinterFilter</filter-name>-->
+        <!--<description>这是一个在打印log的filter</description>-->
+        <!--<filter-class>javaEEComponents.interceptorDemo.logPrinterFilter</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>logPrinterFilter</filter-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
+
+    <!--<filter>-->
+        <!--<description>字符集过滤器</description>-->
+        <!--<filter-name>encodingFilter</filter-name>-->
+        <!--<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>-->
+        <!--<init-param>-->
+            <!--<description>字符集编码</description>-->
+            <!--<param-name>encoding</param-name>-->
+            <!--<param-value>UTF-8</param-value>-->
+        <!--</init-param>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>encodingFilter</filter-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
 </web-app>

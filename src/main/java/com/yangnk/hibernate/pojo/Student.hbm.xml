@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.yangnk.hibernate.pojo.Student" table="student" schema="springmvcdemo">
+        <id name="id">
+            <column name="ID" sql-type="int(11)"/>
+        </id>
+        <property name="name">
+            <column name="NAME" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="age">
+            <column name="AGE" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>
