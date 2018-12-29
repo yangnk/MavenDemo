@@ -21,7 +21,7 @@ public class NettyOioServer {
 
     public void server(int port) throws Exception {
         final ByteBuf buf = Unpooled.unreleasableBuffer(Unpooled.copiedBuffer("Hi!\r\n", Charset.forName("UTF-8")));
-        //
+        //NIO线程组
         EventLoopGroup group = new OioEventLoopGroup();
         try {
             //创建netty配置
@@ -43,7 +43,9 @@ public class NettyOioServer {
                             });
                         }
                     });
+            //绑定
             ChannelFuture f = b.bind().sync();  //6
+            //关闭
             f.channel().closeFuture().sync();
         } finally {
             group.shutdownGracefully().sync();        //7
