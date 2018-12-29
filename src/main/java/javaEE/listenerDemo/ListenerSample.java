@@ -1,4 +1,4 @@
-package javaEEComponents.listenerDemo;
+package javaEE.listenerDemo;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;

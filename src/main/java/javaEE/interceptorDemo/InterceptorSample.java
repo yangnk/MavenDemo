@@ -1,4 +1,4 @@
-package javaEEComponents.interceptorDemo;
+package javaEE.interceptorDemo;
 
 import org.springframework.lang.Nullable;
 import org.springframework.web.servlet.ModelAndView;

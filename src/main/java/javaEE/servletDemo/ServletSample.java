@@ -1,4 +1,4 @@
-package javaEEComponents.servletDemo;
+package javaEE.servletDemo;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

@@ -1,4 +1,4 @@
-package javaEEComponents.interceptorDemo;
+package javaEE.interceptorDemo;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

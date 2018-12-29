@@ -5,7 +5,7 @@
          version="3.1">
     <servlet>
         <servlet-name>servletSample</servlet-name>
-        <servlet-class>javaEEComponents.servletDemo.ServletSample</servlet-class>
+        <servlet-class>javaEE.servletDemo.ServletSample</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>servletSample</servlet-name>
@@ -13,13 +13,13 @@
     </servlet-mapping>
 
     <!--<listener>-->
-        <!--<listener-class>javaEEComponents.listenerDemo.ListenerSample</listener-class>-->
+        <!--<listener-class>javaEE.listenerDemo.ListenerSample</listener-class>-->
     <!--</listener>-->
 
     <!--&lt;!&ndash;Servlet测试 START&ndash;&gt;-->
     <!--<servlet>-->
         <!--<servlet-name>helloWorld</servlet-name>-->
-        <!--<servlet-class>javaEEComponents.interceptorDemo.servletSample</servlet-class>-->
+        <!--<servlet-class>javaEE.interceptorDemo.servletSample</servlet-class>-->
     <!--</servlet>-->
     <!--<servlet-mapping>-->
         <!--<servlet-name>helloWorld</servlet-name>-->
@@ -30,7 +30,7 @@
     <!--<filter>-->
         <!--<filter-name>logPrinterFilter</filter-name>-->
         <!--<description>这是一个在打印log的filter</description>-->
-        <!--<filter-class>javaEEComponents.interceptorDemo.logPrinterFilter</filter-class>-->
+        <!--<filter-class>javaEE.interceptorDemo.logPrinterFilter</filter-class>-->
     <!--</filter>-->
     <!--<filter-mapping>-->
         <!--<filter-name>logPrinterFilter</filter-name>-->
